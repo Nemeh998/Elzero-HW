@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Learn JavaScript</title>
+        <script>
+          // Code One
+          //its will not work cous its will run before page html
+          document.getElementById("el").style.color = "red";
+        </script>
+        <script>
+          // Code Two
+          window.onload = function () {
+            document.getElementById("el").style.color = "red";
+          };
+        </script>
+      </head>
+<body>
+    <header>
+        <p>16/9/2022-week1</p>
+
+    </header>
+    <h1 id="el">Page Title</h1>
+    <script>
+      // Code Three
+      document.getElementById("el").style.color = "red";
+    </script>
+</body>
+</html>
